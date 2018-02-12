@@ -34,6 +34,10 @@ config-ipynb: config-general
 	echo "PLUGINS = ['ipynb.markup']" >> pelicanconf.py
 
 config-general: install
+	#. content: your edition dir. this will be saved and sync this Dir.
+	ln -s `pwd`/content ln_content
+	mv ln_content ${PREFIX}/${PRODUCT}.env/content
+
 	#. quickstart pelican. it would autogen pelicanconf.py 
 	( \
         source ${PREFIX}/${PRODUCT}.env/bin/activate; \
