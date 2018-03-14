@@ -1,3 +1,6 @@
+# For more language support
+# https://github.com/jupyter/jupyter/wiki/Jupyter-kernels.
+#
 PREFIX=/srv/test
 PRODUCT=MyBlog
 

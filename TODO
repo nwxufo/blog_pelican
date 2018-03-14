@@ -1,0 +1,9 @@
+1. Install Panda to support pdf convert.
+2. for c language support.
+   beyond: gcc jupyter python 3 pip
+   step by step:
+	1. pip install jupyter-c-kernel
+	2. install_c_kernel
+	3. start your notebook.
+   Document:
+       github.com/brendan-rius/jupyter-c-kernel.git.
