@@ -1,0 +1,12 @@
+##CentOS 7
+###Enable the EPEL repository with:
+	yum install epel-release
+###Install python34 and python-pip packages with:
+	yum install python34 python-pip
+###Update pip and install virtualenv with:
+	pip install -U pip
+	pip install -U virtualenv
+
+###python link
+	rm /usr/bin/python
+	yum install python34 python-pip
