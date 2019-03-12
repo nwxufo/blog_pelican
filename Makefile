@@ -1,7 +1,7 @@
 # For more language support
 # https://github.com/jupyter/jupyter/wiki/Jupyter-kernels.
 #
-PREFIX=/srv/test
+PREFIX=/srv/$USER
 PRODUCT=MyBlog
 
 SHELL := /bin/bash
