@@ -9,3 +9,7 @@ matplotlib==1.5.1
 scikit-learn
 scipy
 numpy
+
+#themes elegant-pelicant-theme
+cssmin
+webassets
