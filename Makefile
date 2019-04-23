@@ -14,6 +14,10 @@ help:
 #http://jupyter-notebook.readthedocs.io/en/latest/notebook.html
 #For Math/Latex pulgins
 #https://github.com/getpelican/pelican-plugins/tree/master/render_math
+test:
+	make html;
+	pelican content;
+	make serve #default port:8000
 
 #opertional
 config-themes:
@@ -37,6 +41,7 @@ config-ipynb: config-general
 	# These lines tell Pelican to activate the plugin when generating HTML.
 	cd ${PREFIX}/${PRODUCT}/
 	git init
+	#TODO: Test dir if exits. 
 	mkdir plugins
 	git submodule add git://github.com/danielfrg/pelican-ipynb.git plugins/ipynb
 	echo "MARKUP = ('md', 'ipynb')" >> pelicanconf.py
@@ -53,6 +58,7 @@ config-general: install
         source ${PREFIX}/${PRODUCT}/bin/activate; \
 	cd ${PREFIX}/${PRODUCT}/ ;\
 	pelican-quickstart; \
+		deactivate; \
 	)
 
 install: prepare
@@ -64,5 +70,5 @@ install: prepare
 	)
 
 prepare:
-	rm -rf ${PREFIX}/${PRODUCT}
-	virtualenv -p /usr/bin/python3 ${PREFIX}/${PRODUCT}.env
+	#rm -rf ${PREFIX}/${PRODUCT};/
+	virtualenv -p /usr/bin/python3 ${PREFIX}/${PRODUCT}
