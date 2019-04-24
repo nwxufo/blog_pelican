@@ -8,3 +8,8 @@
    Document:
        github.com/brendan-rius/jupyter-c-kernel.git.
 3. support for sliders.
+	2019.04: I can't believe I got sliders 3 years ago.
+4. add script to automative add Evironment Variable to .bashrc 
+	to sync to ~/Makefile
+	STEP:
+		1. using awk grep etc. : if there has Env variable. if not, add it.
