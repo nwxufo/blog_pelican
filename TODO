@@ -13,3 +13,9 @@
 	to sync to ~/Makefile
 	STEP:
 		1. using awk grep etc. : if there has Env variable. if not, add it.
+5. add comment function about my blog. using github commit
+
+Ref:
+https://zodiac911.github.io/blog/elegant-tuning.html
+https://zodiac911.github.io/blog/elegant-tuning.html
+https://zodiac911.github.io/blog/elegant-tuning.html (*)
